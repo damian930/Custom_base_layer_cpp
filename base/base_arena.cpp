@@ -3,7 +3,6 @@
 
 #include "base_arena.h"
 
-
 ///////////////////////////////////////////////////////////
 // Damian: This part should be outside of here, somewhere in the platform independet layer 
 //
@@ -71,6 +70,24 @@ Arena* arena_alloc(U32 mem_size)
     arena->cap  = mem_size;
 
     return arena;
+}
+
+void arena_release(Arena* arena)
+{
+    NotYetImplemented
+}
+
+void* arena_push_nozero(Arena* arena, U64 size)
+{
+    NotYetImplemented
+    return (void*)0;
+}
+
+void* arena_push(Arena* arena, U32 size)
+{
+    NotYetImplemented
+    return (void*)0;
+
 }
 
 void arena_uninit(Arena* arena)

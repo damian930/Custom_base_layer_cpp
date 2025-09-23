@@ -26,6 +26,7 @@
 
 #define InvalidCodePath Assert(false);
 #define DebugStopHere do { U32 __dbg_stop_here__ = 0; } while(false);
+#define NotYetImplemented Assert(false)
 
 #define ArrayCount(static_arr) (sizeof(static_arr) / sizeof(static_arr[0]))
 
@@ -50,7 +51,7 @@
 #define ForEachIndex(type, it_var_name, max_index) \
     for (type it_var_name = 0; it_var_name < max_index; it_var_name += 1) 
 
-#define StartEndLoop(start, end) for ( int __i__ = (start, 0); __i__ == 0; __i__ += 1, end)
+#define DefereLoop(start, end) for ( int __i__ = (start, 0); __i__ == 0; __i__ += 1, end)
 
 ///////////////////////////////////////////////////////////
 // Damian: Generic macros for custom built data struct manipulation

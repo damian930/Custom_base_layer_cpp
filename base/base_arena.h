@@ -18,14 +18,8 @@ void arena_release(Arena* arena);
 void* arena_push_nozero(Arena* arena, U64 size);
 void* arena_push(Arena* arena, U32 size);
 
-
-
 #define ArenaPush(arena_p, type) (type*) arena_push(arena_p, sizeof(type))
 #define ArenaPushArr(arena_p, type, count) (type*) arena_push(arena_p, sizeof(type) * count)
-
-
-
-
 
 
 

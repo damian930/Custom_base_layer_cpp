@@ -3,9 +3,9 @@
 
 #include "base_string.h"
 
-String8 string8_null_terminate(Arena* arena, String8 str8)
+Str8 string8_null_terminate(Arena* arena, Str8 str8)
 {
-    String8 result = {};
+    Str8 result = {};
     result.str = Null;
     result.len = str8.len + 1;
 
