@@ -21,6 +21,8 @@ typedef S32 B32;
 #define local_persist static
 #define file_private static
 #define global_ static 
+// NOTE: this had underscore to it, sice i like to use cout insted of printf
+//       and to include cout i need to include iostream, and it has its own global macro  
 
 #define namespaced_enum enum class
 

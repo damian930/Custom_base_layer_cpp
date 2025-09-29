@@ -26,7 +26,7 @@
 
 #define InvalidCodePath Assert(false);
 #define DebugStopHere do { U32 __dbg_stop_here__ = 0; } while(false);
-#define NotYetImplemented Assert(false)
+#define NotImplemented Assert(false)
 
 #define ArrayCount(static_arr) (sizeof(static_arr) / sizeof(static_arr[0]))
 
